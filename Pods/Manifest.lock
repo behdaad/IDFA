@@ -1,0 +1,18 @@
+PODS:
+  - Adjust (4.26.1):
+    - Adjust/Core (= 4.26.1)
+  - Adjust/Core (4.26.1)
+
+DEPENDENCIES:
+  - Adjust (~> 4.15)
+
+SPEC REPOS:
+  trunk:
+    - Adjust
+
+SPEC CHECKSUMS:
+  Adjust: e8f9b8b50b3d234923389f8e0077ce911cf502d8
+
+PODFILE CHECKSUM: 58e7e7750bd44625638329041f857540001ee1b4
+
+COCOAPODS: 1.10.0
