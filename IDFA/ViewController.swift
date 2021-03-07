@@ -13,15 +13,20 @@ import AppTrackingTransparency
 class ViewController: UIViewController {
     @IBOutlet var stackView: UIStackView!
     
+    @IBAction func settingsButtonTapped(_ sender: UIButton) {
+        let url = URL(string: UIApplication.openSettingsURLString)!
+        
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        if #available(iOS 14, *) {
-            ATTrackingManager.requestTrackingAuthorization(completionHandler: {_ in })
-        } else {
-            // Fallback on earlier versions
-        }
+//        if #available(iOS 14, *) {
+//            ATTrackingManager.requestTrackingAuthorization(completionHandler: {_ in })
+//        } else {
+//            // Fallback on earlier versions
+//        }
         
         let iOSVersion = UIDevice.current.systemVersion
         addLabel(text: "iOS Version: \(iOSVersion)")

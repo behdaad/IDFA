@@ -18,9 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="0Y8-DZ-Zz2">
-                                <rect key="frame" x="20" y="44" width="374" height="808"/>
+                                <rect key="frame" x="20" y="94" width="374" height="708"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC5-IS-1KJ">
+                                <rect key="frame" x="20" y="44" width="374" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="settingsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FoM-a3-DR3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -28,7 +35,10 @@
                             <constraint firstItem="0Y8-DZ-Zz2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BTk-zl-mYh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Y8-DZ-Zz2" secondAttribute="trailing" constant="20" id="PFc-6O-hxJ"/>
                             <constraint firstItem="0Y8-DZ-Zz2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V04-iG-Jhl"/>
-                            <constraint firstItem="0Y8-DZ-Zz2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YbQ-dL-4Gq"/>
+                            <constraint firstItem="0Y8-DZ-Zz2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="YbQ-dL-4Gq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oC5-IS-1KJ" secondAttribute="trailing" constant="20" id="fZL-U9-Lbz"/>
+                            <constraint firstItem="oC5-IS-1KJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rbu-au-x5d"/>
+                            <constraint firstItem="oC5-IS-1KJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uvz-hj-vwh"/>
                         </constraints>
                     </view>
                     <connections>
@@ -42,7 +52,7 @@
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
